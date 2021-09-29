@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*  header  */
+
+header{
+    background: #333;
+    width: 100%;
+    height: 75px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    padding-top: 5px;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    text-align: right;
+    margin-right: 10px;
+}
+
+nav > a{
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+/*main*/
+
+main{
+    padding-top: 71px;
+}
+
+.Rio{
+    width: 1350px;
+    height: 550px;
+    display: block;
+    margin: auto;
+}
+
+.contenedor{
+    padding: 60px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor2{
+    background: #f2f2f2;
+    padding: 60px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+h2{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+/*seccion introduccion*/
+.s1{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.contenedor-introduccion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img1{
+    width: 35%;
+    display: flex;
+}
+.texto-intro{
+    text-align: justify;
+}
+.contenedor-introduccion .texto-intro{
+    width: 40%;
+}
+
+/*  Seccion ideas  */
+
+.contenedor-ideas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img2{
+    width: 25%;
+    display: flex;
+}
+.contenedor-ideas .texto-ideas{
+    width: 40%;
+}
+.texto-ideas{
+    text-align: justify;
+}
+.texto-ideas p span{
+    background: #333;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+/*  seccion planes  */
+
+.contenedor-planes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img3{
+    width: 35%;   
+    display: flex;
+   
+}
+.contenedor-planes .texto-planes{
+    width: 30%;
+}
+
+.texto-planes p span{
+    background: #333;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+/*  seccion mito*/
+
+.contenedor-mito{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img4{
+    width: 50%;
+    display: flex;
+}
+
+.contenedor-mito .texto-mito{
+    width: 40%;
+}
+.texto-mito{
+    text-align: justify;
+}
+
+/*  Tarjetas de presentacion*/
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 200px;
+    padding-bottom: 30px;
+}
+
+.cards > .card{
+    background: #333;
+    display: flex;
+    width: 45%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0,0, 0.6);
+}
+
+.cards .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    padding-left: 20px;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.s2{
+    width: 80%;
+    padding-bottom: 70px;
+}
+
+/*  footer  */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #f2f2f2;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+/*  media queris  */
+
+@media screen and (max-width: 576px) {
+    nav{
+        margin: 10px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .contenedor-introduccion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-introduccion .texto-intro{
+        width: 95%;
+        padding-top: 20px;
+    }
+    .contenedor-ideas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-ideas .texto-ideas{
+        width: 95%;
+        padding-top: 20px;
+    }
+    .contenedor-planes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-planes .texto-planes{
+        width: 95%;
+        padding-top: 20px;
+    }
+    .contenedor-mito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-mito .texto-mito{
+        width: 95%;
+        padding-top: 10px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards .card{
+        width: 95%;
+        padding-top: 10px;
+    }
+    .cards .card > p{
+        font-size: 5px;
+    }
+    .contenedor-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-footer .content-foo{
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .contenedor-introduccion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-introduccion .texto-intro{
+        width: 90%;
+        padding-top: 20px;
+    }
+    .contenedor-ideas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-ideas .texto-ideas{
+        width: 90%;
+        padding-top: 20px;
+    }
+    .contenedor-planes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-planes .texto-planes{
+        width: 90%;
+        padding-top: 20px;
+    }
+    .contenedor-mito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-mito .texto-mito{
+        width: 95%;
+        padding-top: 10px;
+    }
+   
+}
+
+@media screen and (max-width: 1108px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards .card{
+        width: 95%;
+        padding-top: 10px;
+    }
+    .cards .card > p{
+        font-size: 15px;
+    }
+}
